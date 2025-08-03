@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="intro-container">
+    <div class="intro-content">
+        <h1>Welcome to Hand Sign Recognition</h1>
+        <p>Explore our real-time hand sign recognition system powered by deep learning and computer vision.</p>
+        <div class="intro-buttons">
+            <a href="{{ url_for('login') }}" class="btn intro-btn">Login</a>
+            <a href="{{ url_for('signup') }}" class="btn btn-secondary intro-btn">Sign Up</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

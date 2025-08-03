@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-container">
+    <div class="home-content">
+        <h1>Welcome to Hand Sign Recognition!</h1>
+        <p>Click below to start the webcam and begin recognition</p>
+    </div>
+    
+    <div class="webcam-btn-container">
+        <a href="{{ url_for('webcam') }}" class="webcam-btn">Start Webcam</a>
+    </div>
+
+    <!-- Logout Form Positioned at the Top-Left -->
+    <form action="{{ url_for('logout') }}" method="POST" style="position: absolute; top: 10px; left: 10px;">
+        <button type="submit" class="btn btn-secondary">Logout</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="webcam-container">
+    <h1>Hand Sign Recognition</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" alt="Webcam Feed">
+    </div>
+    <a href="{{ url_for('home') }}" class="btn btn-stop">Stop Webcam</a>
+</div>
+{% endblock %}
