@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Sign Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='theme.js') }}"></script>
+</head>
+<body class="light-mode">
+    {% if request.endpoint != 'intro' %}
+        <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>
